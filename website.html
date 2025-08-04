@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>website testing</title>
+</head>
+
+<body>
+    <button onclick="
+            console.log(`Cart Quantity: ${show_quantity}`);
+            ">Show Quantity</button>
+    <button onclick="
+        cart_items = cart_items+ 1;
+        show_quantity+=1;
+        console.log(`cart items: ${cart_items}`);">
+        Add to Cart
+    </button>
+    <button onclick="
+        cart_items+=2;
+        show_quantity+=2;
+        console.log(`Cart Quantity: ${cart_items}`);
+        ">
+        +2
+    </button>
+    <button onclick="
+        cart_items+=3;
+        show_quantity+=3;
+        console.log(`Cart Quantity: ${cart_items}`);
+        ">
+        +3
+    </button>
+        <button onclick="
+        show_quantity =0;
+        cart_items =0;
+        console.log('Reset done!');
+    ">
+        Reset Cart
+    </button>
+    <script>
+        let show_quantity = 0;
+        let cart_items = 0;
+    </script>
+</body>
+
+</html>
